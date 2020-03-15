@@ -45,4 +45,17 @@ service navController_IDL
     */
    bool go_to_wait(1:double x, 2:double y, 3:double theta, 4:bool heading_rear = false,
                    5:i32 timeout = 0);
+
+   /**
+    * Start navigation while controlling distance from the specified skeleton.
+    * @param skeleton_tag is the skeleton's tag.
+    * @return true/false on success/failure.
+    */
+   bool track_skeleton(1:string skeleton_tag);
+
+   /**
+    * Query if navigation is underway.
+    * @return true if navigation is being currently performed.
+    */
+   bool is_navigating();
 }
