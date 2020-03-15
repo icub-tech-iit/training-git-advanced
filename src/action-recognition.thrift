@@ -36,4 +36,18 @@ service actionRecognizer_IDL
     * @return true/false on success/failure.
     */
    bool tags(1:string skel_tag_);
+
+   /**
+    * Load the name of the exercise to perform.
+    * @param exercise name of the exercise to perform.
+    * @return true/false on success/failure.
+    */
+   bool load(1:string exercise);
+
+   /**
+    * Set the transformation matrix of the skeleton.
+    * @param T_ is the transformation matrix.
+    * @return true/false on success/failure.
+    */
+   bool setTransformation(1:Matrix T_);
 }
