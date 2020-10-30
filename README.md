@@ -10,7 +10,7 @@ The repository maintainer [@pattacini][3] requires you to demonstrate your skill
 - make sure that the resulting **`master` will have the most linear history possible** (see below).
 
 To complete the assignment do:
-1. [Generate the sandbox][4] as a copy of this repository to be created into your own account.
+1. [Generate the sandbox][4] as a copy of this repository to be created into your own account. Tick in the option "include all branches" ✔
 2. Merge the two concurrent lines of development carried out in the two branches `robotology-bot/nav-control` and `vvv-school-bot/nav-control` into a unique branch called `feat/nav-control`. The branch `feat/nav-control` is required to have a [linear history][5].
 3. [Rebase][6] `feat/nav-control` on `master`.
 4. [Create a pull request][7] (**PR**) with `master` as _base branch_ and `feat/nav-control` as _compare branch_.
